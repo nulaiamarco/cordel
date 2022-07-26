@@ -1,0 +1,114 @@
+/*
+=====================================
+ CRIAÇÃO DO SITE COM EFEITOS PARALAX
+=====================================
+*/
+
+/* configurações globais */
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
+/* configurações gerais */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+
+/* configurações específicas para cada TAG */
+
+html, body {
+    min-height: 100vh;  /* 100% da altura da Viewport Height */
+    background-color: darkgray;
+    font-family: var(--fonte01);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte02);
+}
+
+header > h1 {
+    padding-top: 50px;
+    /* text-transform: uppercase;   se quiser todas letras em maiúsculas */
+    font-variant: small-caps;  /* todas letras em maiúsculas mas as primeiras de cada palavra ficam um pouco maiores */
+    font-family: var(--fonte02);
+    font-size: 6vw; /* tamanho de 6% da Viewport Width(largura) ou seja, o tamanho da fonte se redimenciona de acordo com a largura da tela */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    /* font-weight: bolder; */
+    
+}
+
+header a:hover, footer a:hover { /* quando passar o mouse no link do cabeçalho */
+    text-decoration: underline;
+
+}
+
+section {
+    padding-top: 10vh; /* 10% da altura da Viewport Height do padding ( tipo uma borda/margem ) */
+    padding-bottom: 10vh; /* 10% da altura da Viewport Height do padding ( tipo uma borda/margem ) */
+    padding-left: 30px;
+    line-height: 2em; /* duas vezes o espaçamento entre linhas */
+    font-family: var(--fonte03);
+    font-size: 2.5vw; /* tamanho de 2,5% da Viewport Width(largura) ou seja, o tamanho da fonte se redimenciona de acordo com a largura da tela */
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal { /* tag SECTION da classe NORMAL */
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.458);
+    background-size: cover;    
+    background-attachment: fixed;  /* aqui está o efeito paralax para as estruturas CSS dos seletores section#img01  e  section#img02 */
+}
+
+section.imagem > p { /* para todo parágrafo dentro da section imagem fazer uma moldura preenchida */
+    background-color: rgba(0, 0, 0, 0.280);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black; /* pequeno sombreamento na fonte */
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
