@@ -1,7 +1,7 @@
 /*
-=====================================
- CRIAÇÃO DO SITE COM EFEITOS PARALAX
-=====================================
+======================================
+ CRIAÇÃO DO SITE COM EFEITOS PARALLAX
+======================================
 */
 
 /* configurações globais */
@@ -45,7 +45,7 @@ header > h1 {
     /* text-transform: uppercase;   se quiser todas letras em maiúsculas */
     font-variant: small-caps;  /* todas letras em maiúsculas mas as primeiras de cada palavra ficam um pouco maiores */
     font-family: var(--fonte02);
-    font-size: 6vw; /* tamanho de 6% da Viewport Width(largura) ou seja, o tamanho da fonte se redimenciona de acordo com a largura da tela */
+    font-size: 10vw; /* tamanho de 10% da Viewport Width(largura) ou seja, o tamanho da fonte se redimenciona de acordo com a largura da tela */
 }
 
 header > p {
@@ -70,7 +70,7 @@ section {
     padding-left: 30px;
     line-height: 2em; /* duas vezes o espaçamento entre linhas */
     font-family: var(--fonte03);
-    font-size: 2.5vw; /* tamanho de 2,5% da Viewport Width(largura) ou seja, o tamanho da fonte se redimenciona de acordo com a largura da tela */
+    font-size: 3.5vw; /* tamanho de 3,5% da Viewport Width(largura) ou seja, o tamanho da fonte se redimenciona de acordo com a largura da tela */
 }
 
 section > p {
@@ -111,4 +111,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 0.75em;
 }
